@@ -1,2 +1,2 @@
-# laravel_jwt
+# Laravel JWT
 Proyecto en Laravel con autenticación JWT
