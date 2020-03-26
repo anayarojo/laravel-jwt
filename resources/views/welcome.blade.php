@@ -82,8 +82,8 @@
                     Laravel JWT
                 </div>
                 <div class="links">
-                    <a href="https://github.com/anayarojo/laravel-jwt">Get Started</a>
-                    <a href="https://github.com/anayarojo/laravel-jwt">Documentation</a>
+                    <a href="https://github.com/anayarojo/laravel-jwt#inicio-r%C3%A1pido">Get Started</a>
+                    <a href="https://github.com/anayarojo/laravel-jwt#api">Documentation</a>
                     <a href="https://github.com/anayarojo/laravel-jwt">GitHub</a>
                 </div>
             </div>
