@@ -29,6 +29,93 @@ Comando para instalar los paquetes de node:
 ```php
 npm install
 ```
+### API
+<details>
+  <summary>Mostrar</summary><p></p>
+
+#### Register
+
+Method: `POST`
+
+URL: `{{host}}/api/register`
+
+Body:
+```json
+{
+	"name": "{{name}}",
+	"email": "{{email}}",
+	"password": "{{password}}",
+	"password_confirmation": "{{password}}"
+}
+```
+
+Response:
+```json
+{
+    "user": {
+        "name": "Test1",
+        "email": "test1@email.com",
+        "updated_at": "2020-03-26 19:05:51",
+        "created_at": "2020-03-26 19:05:51",
+        "id": 2
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sYXJhdmVsLWp3dC5yYW5heWFyb2pvLmNvbVwvXC9hcGlcL3JlZ2lzdGVyIiwiaWF0IjoxNTg1MjQ5NTUxLCJleHAiOjE1ODUyNTMxNTEsIm5iZiI6MTU4NTI0OTU1MSwianRpIjoidHlrMlpkVXhwZTF6bDcybyIsInN1YiI6MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ApagcOAEUBQYL2BeEYDuiiEAK2HElOuV84mshs6ScNg"
+}
+```
+
+#### Login
+
+Method: `POST`
+
+URL: `{{host}}/api/login`
+
+Body:
+```json
+{
+	"email": "{{email}}",
+	"password": "{{password}}"
+}
+```
+
+Response:
+```json
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sYXJhdmVsLWp3dC5yYW5heWFyb2pvLmNvbVwvXC9hcGlcL3JlZ2lzdGVyIiwiaWF0IjoxNTg1MjQ5NTUxLCJleHAiOjE1ODUyNTMxNTEsIm5iZiI6MTU4NTI0OTU1MSwianRpIjoidHlrMlpkVXhwZTF6bDcybyIsInN1YiI6MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ApagcOAEUBQYL2BeEYDuiiEAK2HElOuV84mshs6ScNg"
+}
+```
+
+#### Open
+
+Method: `GET`
+
+URL: `{{host}}/api/open`
+
+Response:
+```json
+{
+    "data": "This data is open and can be accessed without the client being authenticated"
+}
+```
+
+#### Closed
+
+Method: `GET`
+
+URL: `{{host}}/api/closed`
+
+Headers:
+```json
+    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sYXJhdmVsLWp3dC5yYW5heWFyb2pvLmNvbVwvXC9hcGlcL2xvZ2luIiwiaWF0IjoxNTg1MTkwMDMxLCJleHAiOjE1ODUxOTM2MzEsIm5iZiI6MTU4NTE5MDAzMSwianRpIjoiS3R6bDdWckE0SXh6OE1heSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5NNXWCFh6o1d1vv-goRA8l1OhfmWFh9HHBR5fO7YRn0"
+```
+
+Response:
+```json
+{
+    "data": "This data is open and can be accessed without the client being authenticated"
+}
+```
+
+</details>
 
 ### Proceso de desarrollo
 
