@@ -1,6 +1,35 @@
 # Laravel JWT
 Proyecto en Laravel con autenticación JWT
 
+### Inicio rápido
+
+Comando para clonar proyecto:
+
+###### HTTPS
+```php
+git clone https://github.com/anayarojo/laravel-jwt.git
+```
+
+###### SSH
+```php
+git clone git@github.com:anayarojo/laravel-jwt.git
+```
+
+Comando para ir a la carpeta del proyecto:
+```php
+cd laravel-jwt
+```
+
+Comando para instalar los paquetes composer:
+```php
+composer install
+```
+
+Comando para instalar los paquetes de node:
+```php
+npm install
+```
+
 ### Proceso de desarrollo
 
 <details>
