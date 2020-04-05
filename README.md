@@ -406,3 +406,24 @@ Route::group(['middleware' => ['jwt.verify']], function() {
 ```
 
 </details>
+
+### cPanel commands
+<details>
+  <summary>Mostrar</summary><p></p>
+
+```bash
+--------------------------------------------------------------
+PHP
+/opt/php71/bin/php
+/opt/php71/bin/php artisan key:generate
+/opt/php71/bin/php artisan migrate
+--------------------------------------------------------------
+COMPOSER
+/opt/cpanel/composer/bin/composer install
+/opt/cpanel/composer/bin/composer update
+/opt/php71/bin/php /opt/cpanel/composer/bin/composer install
+/opt/php71/bin/php /opt/cpanel/composer/bin/composer update
+--------------------------------------------------------------
+```
+
+</details>
