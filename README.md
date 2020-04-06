@@ -418,9 +418,19 @@ PHP
 /opt/php71/bin/php artisan key:generate
 /opt/php71/bin/php artisan migrate
 --------------------------------------------------------------
+ARTISAN
+/opt/php71/bin/php artisan cache:clear
+/opt/php71/bin/php artisan route:clear
+/opt/php71/bin/php artisan view:clear
+/opt/php71/bin/php artisan config:clear
+--------------------------------------------------------------
 COMPOSER
 /opt/cpanel/composer/bin/composer install
 /opt/cpanel/composer/bin/composer update
+/opt/cpanel/composer/bin/composer require <package>
+/opt/cpanel/composer/bin/composer remove <package>
+/opt/cpanel/composer/bin/composer dump-autoload
+--------------------------------------------------------------
 /opt/php71/bin/php /opt/cpanel/composer/bin/composer install
 /opt/php71/bin/php /opt/cpanel/composer/bin/composer update
 --------------------------------------------------------------
